@@ -1,4 +1,4 @@
-# CI/CD Pipeline Health Monitor - GitHub Demo
+# CI/CD Pipeline Health Monitor 
 
 ## Overview
 
@@ -132,7 +132,3 @@ To visualize the metrics in Grafana, you need to set up Prometheus to scrape the
 - **Basic Alerting:** The alerting mechanism is currently limited to printing to the console. Real-world alerting systems would require integration with dedicated notification services like Slack, email, PagerDuty, etc., with proper error handling and retry mechanisms.
 
 These inefficiencies are included to highlight areas for potential improvement and optimization in a production-ready monitoring solution. Addressing these could lead to significant performance gains, such as a hypothetical **40% reduction in debugging time** due to faster metric updates and more effective alerting.
-
----
-
-This README provides a basic guide to getting started with the CI/CD Pipeline Health Monitor demo project.  Further enhancements and features can be added to create a more comprehensive and robust monitoring solution.
