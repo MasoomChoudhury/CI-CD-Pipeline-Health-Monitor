@@ -1,0 +1,46 @@
+Jenkins Build Log - Sample
+
+Build started: #123
+Started by user Admin
+Running tests...
+Testcase: test_login_success time=25.5s
+Testcase: test_add_item_to_cart time=32.1s
+Testcase: test_checkout_process time=58.7s
+Testcase: test_payment_gateway time=65.2s
+Finished: SUCCESS
+
+Build started: #124
+Started by user Admin
+Running tests...
+Testcase: test_login_success time=26.8s
+Testcase: test_add_item_to_cart time=31.9s
+Testcase: test_checkout_process time=59.1s
+Testcase: test_payment_gateway time=70.3s
+Finished: FAILURE
+
+Build started: #125
+Started by user Admin
+Running tests...
+Testcase: test_login_success time=24.9s
+Testcase: test_add_item_to_cart time=33.5s
+Testcase: test_checkout_process time=61.2s
+Testcase: test_payment_gateway time=55.8s
+Finished: SUCCESS
+
+Build started: #126
+Started by user Admin
+Running tests...
+Testcase: test_login_success time=27.1s
+Testcase: test_add_item_to_cart time=30.4s
+Testcase: test_checkout_process time=57.9s
+Testcase: test_payment_gateway time=62.5s
+Finished: FAILURE
+
+Build started: #127
+Started by user Admin
+Running tests...
+Testcase: test_login_success time=25.3s
+Testcase: test_add_item_to_cart time=32.8s
+Testcase: test_checkout_process time=60.5s
+Testcase: test_payment_gateway time=68.9s
+Finished: SUCCESS

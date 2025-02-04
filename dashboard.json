@@ -1,0 +1,111 @@
+{
+  "panels": [
+    {
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 60
+              }
+            ]
+          },
+          "unit": "s"
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 0,
+        "y": 0
+      },
+      "id": 1,
+      "options": {
+        "legend": {
+          "displayMode": "list",
+          "placement": "bottom"
+        },
+        "tooltip": {
+          "mode": "single",
+          "sort": "none"
+        }
+      },
+      "pluginVersion": "8.5.2",
+      "targets": [
+        {
+          "datasource": "${DS_PROMETHEUS}",
+          "expr": "test_execution_time_seconds",
+          "instant": false,
+          "legendFormat": "{{test_name}}",
+          "refId": "A"
+        }
+      ],
+      "title": "Test Execution Time",
+      "type": "timeseries"
+    },
+    {
+      "datasource": "${DS_PROMETHEUS}",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "palette-classic"
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "green",
+                "value": null
+              },
+              {
+                "color": "red",
+                "value": 5
+              }
+            ]
+          }
+        },
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 8,
+        "w": 12,
+        "x": 12,
+        "y": 0
+      },
+      "id": 2,
+      "options": {
+        "content": "**Pipeline Failure Count**\n\nCurrent failure count: {{value}}",
+        "displayMode": "value",
+        "textAlignment": "center",
+        "textSize": "lg"
+      },
+      "pluginVersion": "8.5.2",
+      "targets": [
+        {
+          "datasource": "${DS_PROMETHEUS}",
+          "expr": "pipeline_failure_count",
+          "instant": true,
+          "refId": "A"
+        }
+      ],
+      "title": "Pipeline Failure Count",
+      "type": "stat"
+    }
+  ],
+  "schemaVersion": 37,
+  "title": "CI/CD Pipeline Health",
+  "uid": "pipeline-health-dashboard"
+}

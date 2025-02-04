@@ -1,0 +1,12 @@
+# config.yaml - Configuration for CI/CD Pipeline Health Monitor
+
+thresholds:
+  max_test_execution_time: 60  # seconds - Maximum acceptable test execution time
+  max_failure_count: 5        # Maximum allowed failure count before alerting
+  flaky_test_threshold: 2      # Number of times a test can fail intermittently
+
+prometheus:
+  port: 9090                # Port to expose Prometheus metrics
+
+monitor:
+  interval: 30              # seconds - Interval to check logs and update metrics
